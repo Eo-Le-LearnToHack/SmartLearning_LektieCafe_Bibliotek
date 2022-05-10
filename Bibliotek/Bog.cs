@@ -30,7 +30,8 @@ namespace Bibliotek
         { 
             Eventyr = 0,
             Krimi = 1,
-            Kærlighed = 2 
+            Kærlighed = 2,
+            Gyse = 3
         }
         public Genre genre { get; set; }
     }
