@@ -5,35 +5,47 @@ using Bibliotek;
 Faglitteratur BogenOmCSharp = new("Bogen om C# 9.0");
 
 BogenOmCSharp.Forfatter = "Michell Cronberg";
-BogenOmCSharp.Computer = "Programmering i C# for begyndere.";
 BogenOmCSharp.Forlag = "Konsulentfirmaet M. Cronberg Aps. Allingtonvænget 32. 5270 Odense N. Mail: michell@cronberg.dk";
 BogenOmCSharp.Udgivelsesår = 2021;
+BogenOmCSharp.genre = (global::Bibliotek.Faglitteratur.Genre)3;
 
 Skønlitteratur DenGrimmeÆlling = new("Den Grimme Ælling");
 
 DenGrimmeÆlling.Forfatter = "H.C. Andersen";
-DenGrimmeÆlling.Eventyr = "Eventyret om den grimme ælling som frovadler sig til en smuk svane.";
 DenGrimmeÆlling.Forlag = "Gyldendahl";
 DenGrimmeÆlling.Udgivelsesår = 1843;
+DenGrimmeÆlling.genre = (global::Bibliotek.Skønlitteratur.Genre)0;
 
-Bog[] mineBøger = new Bog[] { BogenOmCSharp, DenGrimmeÆlling };
+//Bog[] mineBøger = new Bog[] { BogenOmCSharp, DenGrimmeÆlling };
+Faglitteratur[] fagBøger = new Faglitteratur[] { BogenOmCSharp};
+Skønlitteratur[] skønBøger = new Skønlitteratur[] { DenGrimmeÆlling };
 
-foreach (Bog x in mineBøger)
+//ANVENDES IKKE arrayet Bog, da det ikke vil give genre på underklasserne Faglitteratur og Skønlitteratur
+//foreach (Bog x in mineBøger)
+//{
+//    Console.WriteLine(x.Titel);
+//    Console.WriteLine(x.Forfatter);
+//    Console.WriteLine(x.Forlag);
+//    Console.WriteLine(x.Udgivelsesår);
+//    Console.WriteLine("");
+//}
+ 
+foreach (Skønlitteratur x in skønBøger)
 {
     Console.WriteLine(x.Titel);
     Console.WriteLine(x.Forfatter);
     Console.WriteLine(x.Forlag);
     Console.WriteLine(x.Udgivelsesår);
-
-    
+    Console.WriteLine(x.genre);
+    Console.WriteLine("");
 }
 
-foreach (Faglitteratur y in mineBøger)
+foreach (Faglitteratur x in fagBøger)
 {
-    Console.WriteLine(y.Computer);
-}
-Console.WriteLine("TEST");
-foreach (Skønlitteratur z in mineBøger)
-{
-    Console.WriteLine(z.Eventyr);
+    Console.WriteLine(x.Titel);
+    Console.WriteLine(x.Forfatter);
+    Console.WriteLine(x.Forlag);
+    Console.WriteLine(x.Udgivelsesår);
+    Console.WriteLine(x.genre);
+    Console.WriteLine("");
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sim8hu\\Desktop\\Code\\Ovelse\\LektieCafe_Bibliotek\\Bibliotek\\Bibliotek.csproj",
+      "projectUniqueName": "C:\\Users\\sim8hu\\Desktop\\Code\\cSharp\\LektieCafe\\Bibliotek\\Bibliotek\\Bibliotek.csproj",
       "projectName": "Bibliotek",
-      "projectPath": "C:\\Users\\sim8hu\\Desktop\\Code\\Ovelse\\LektieCafe_Bibliotek\\Bibliotek\\Bibliotek.csproj",
+      "projectPath": "C:\\Users\\sim8hu\\Desktop\\Code\\cSharp\\LektieCafe\\Bibliotek\\Bibliotek\\Bibliotek.csproj",
       "packagesPath": "C:\\Users\\sim8hu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sim8hu\\Desktop\\Code\\Ovelse\\LektieCafe_Bibliotek\\Bibliotek\\obj\\",
+      "outputPath": "C:\\Users\\sim8hu\\Desktop\\Code\\cSharp\\LektieCafe\\Bibliotek\\Bibliotek\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sim8hu\\AppData\\Roaming\\NuGet\\NuGet.Config",

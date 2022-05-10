@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bibliotek
 {
-    public class Bog
+    public class Bog //SUPERCLASS
     {
         public string Forlag { get; set; }
         public string Titel { get; set; }
@@ -20,25 +20,34 @@ namespace Bibliotek
 
     }
 
-    public class Skønlitteratur : Bog
+    public class Skønlitteratur : Bog //1.SUBCLASS 
     {
         public Skønlitteratur(string titel) : base(titel)
         {
         }
-        public string Eventyr { get; set; }
-        public string Krimi { get; set; }
-        public string Kærlighed { get; set; }
+
+        public enum Genre : int 
+        { 
+            Eventyr = 0,
+            Krimi = 1,
+            Kærlighed = 2 
+        }
+        public Genre genre { get; set; }
     }
 
-    public class Faglitteratur : Bog
+    public class Faglitteratur : Bog //2. SUBCLASS
     {
         public Faglitteratur(string titel) : base(titel)
         {
         }
 
-        public string Naturvidenskab { get; set; }
-        public string Historie { get; set; }
-        public string Dyr { get; set; }
-        public string Computer { get; set; }
+        public enum Genre : int 
+        {
+            Naturvidenskab = 0,
+            Historie = 1,
+            Dyr = 2,
+            Computer = 3
+        }
+        public Genre genre { get; set; }
     }
 }
